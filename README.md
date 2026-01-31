@@ -12,13 +12,13 @@ the result.
 }
 
 # Response in case response code is 200 from the model.
-(
+{
        For the given statement, the system response is
        'anger': 0.006274985, 'disgust': 0.0025598293,
        'fear': 0.009251528, 'joy': 0.9680386 and 'sadness': 0.049744144.
        The dominant emotion is joy.
 
-)
+}
 
 # Response in case response code is 400 from the model.
 {
