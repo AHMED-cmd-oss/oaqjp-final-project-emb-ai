@@ -12,14 +12,13 @@ the result.
 }
 
 # Response in case response code is 200 from the model.
-{
-        f"For the given statement, the system response is"
-        f"'anger':{result['anger']}, 'disgust': {result['disgust']},"
-        f"'fear': {result['fear']}, 'joy': {result['joy']}"
-        f"and 'sadness': {result['sadness']}."
-        f"The dominant emotion is {result['dominant_emotion']}."
+(
+       For the given statement, the system response is
+       'anger': 0.006274985, 'disgust': 0.0025598293,
+       'fear': 0.009251528, 'joy': 0.9680386 and 'sadness': 0.049744144.
+       The dominant emotion is joy.
 
-}
+)
 
 # Response in case response code is 400 from the model.
 {
@@ -36,7 +35,7 @@ the result.
  - requests-> for HTTP request to get result from the model
  ## installing and importing packages
  ### installing packages
- ```
+ ```bash
  pip install flask
  pip install unittest
  pip install requests
@@ -47,6 +46,19 @@ from flask import Flask,render_template,request
 import unittest
 import requests
 ```
+## How to run
+``` bash
+git clone
+flask --app server run --debug
+
+```
+## Project Structure
+- static
+- templates
+- EmotionDetection
+- test_emotion_detection.py
+- readme.md
+- server.py
 
 
 
