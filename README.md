@@ -59,6 +59,8 @@ flask --app server run --debug
 - test_emotion_detection.py
 - readme.md
 - server.py
+- licence
+- .gitignore
 
 
 
