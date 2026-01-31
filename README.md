@@ -5,5 +5,8 @@ This is a API project using Flask.
  ## packages
  - flask
  - unittest-> for testing.
-  ## project structure
-  -
+ ## installing and importing packages
+ '''
+ pip install flask
+ pip install unittest
+ '''
