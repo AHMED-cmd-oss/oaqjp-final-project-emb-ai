@@ -6,12 +6,12 @@ The backend is linked with simple frontend which you can write the sentencs on i
 the result.
 ## Example
 ```
-/emotionDetectio # post request
+/emotionDetection # post request
 {
  "raw-document": "I love this technology"
 }
 
-# Response
+# Response in case response code is 200 from the model.
 {
         f"For the given statement, the system response is"
         f"'anger':{result['anger']}, 'disgust': {result['disgust']},"
@@ -20,6 +20,13 @@ the result.
         f"The dominant emotion is {result['dominant_emotion']}."
 
 }
+
+# Response in case response code is 400 from the model.
+{
+"Invalid input!"
+}
+
+
 ```
 ## Technology
 - python
