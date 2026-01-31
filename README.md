@@ -6,7 +6,7 @@ This is a API project using Flask.
  - flask
  - unittest-> for testing.
  ## installing and importing packages
- '''
+ ```
  pip install flask
  pip install unittest
- '''
+ ```
